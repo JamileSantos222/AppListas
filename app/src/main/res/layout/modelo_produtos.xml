@@ -9,15 +9,22 @@
         android:orientation="vertical">
 
         <ImageView
+            android:scaleType="centerCrop"
             android:id="@+id/modImagemProduto"
-            android:layout_width="match_parent"
+            android:layout_width="200dp"
             android:layout_height="250dp"
-            android:src="@color/black"/>
+            android:src="@drawable/velvetcake"/>
         <TextView
+            android:fontFamily="@font/poppins_extrabold"
+            android:layout_marginTop="5sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textSize="15sp"
+            android:layout_gravity="center_horizontal"
             android:id="@+id/modTítuloProduto"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Título do Produto"/>
+            android:text="Velvet Cake"/>
     </LinearLayout>
 
 </androidx.cardview.widget.CardView>

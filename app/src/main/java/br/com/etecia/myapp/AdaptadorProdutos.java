@@ -16,7 +16,7 @@ import java.util.List;
 public class AdaptadorProdutos extends RecyclerView.Adapter<AdaptadorProdutos.ViewHolder> {
     private Context context;
     private List<Produtos> lstProdutos;
-    private View View;
+
 
     public AdaptadorProdutos(Context context, List<Produtos> lstProdutos) {
         this.context = context;
@@ -28,7 +28,7 @@ public class AdaptadorProdutos extends RecyclerView.Adapter<AdaptadorProdutos.Vi
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         LayoutInflater inflater = LayoutInflater.from(context);
         View view = inflater.inflate(R.layout.modelo_produtos, parent, false);
-        return new ViewHolder(View);
+        return new ViewHolder(view);
     }
 
     @Override

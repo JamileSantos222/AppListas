@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
@@ -31,10 +32,22 @@ public class ListaProdutosActivity extends AppCompatActivity {
         //criando um array que ira carregar a lista de produtos
         lstProdutos = new ArrayList<>();
         lstProdutos.add(new Produtos("Strawberry", R.drawable.strawberry));
-        lstProdutos.add(new Produtos("Birthday Cake with Wishes", R.drawable.birthday_cakewith_wishes)):
+        lstProdutos.add(new Produtos("Birthday Cake with Wishes", R.drawable.birthday));
         lstProdutos.add(new Produtos("Birthday Cake with Wishes", R.drawable.birthday_cakewith_wishes));
+        lstProdutos.add(new Produtos("Velvet Cake" ,R.drawable.velvetcake));
 
         idListaProdutos = findViewById(R.id.idListaProdutos);
-        ;
+
+        //tipo de layout
+        idListaProdutos.setLayoutManager(new GridLayoutManager(getApplicationContext(), 2 ));
+
+        //instanciar o adaptador
+        AdaptadorProdutos adapter = new AdaptadorProdutos(getApplicationContext(), lstProdutos);
+
+        idListaProdutos.hasFixedSize();;
+
+        idListaProdutos.setAdapter(adapter);
+
+
     }
 }

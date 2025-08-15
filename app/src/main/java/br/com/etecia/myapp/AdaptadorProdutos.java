@@ -16,6 +16,7 @@ import java.util.List;
 public class AdaptadorProdutos extends RecyclerView.Adapter<AdaptadorProdutos.ViewHolder> {
     private Context context;
     private List<Produtos> lstProdutos;
+    private View View;
 
     public AdaptadorProdutos(Context context, List<Produtos> lstProdutos) {
         this.context = context;

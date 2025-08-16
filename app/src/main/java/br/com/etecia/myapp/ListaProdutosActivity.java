@@ -35,6 +35,13 @@ public class ListaProdutosActivity extends AppCompatActivity {
         lstProdutos.add(new Produtos("Birthday Cake with Wishes", R.drawable.birthday));
         lstProdutos.add(new Produtos("Birthday Cake with Wishes", R.drawable.birthday_cakewith_wishes));
         lstProdutos.add(new Produtos("Velvet Cake" ,R.drawable.velvetcake));
+        lstProdutos.add(new Produtos("Butter Cake", R.drawable.butter_cake));
+        lstProdutos.add(new Produtos("Chocolate", R.drawable.chocolate));
+        lstProdutos.add(new Produtos("Grace Flower", R.drawable.graceflower));
+        lstProdutos.add(new Produtos("Butter Cake", R.drawable.butter_cake));
+        lstProdutos.add(new Produtos("Vanilla Cake", R.drawable.vanilla_cake));
+        lstProdutos.add(new Produtos("Forest Cake", R.drawable.forest_cake));
+
 
         idListaProdutos = findViewById(R.id.idListaProdutos);
 
